@@ -1063,12 +1063,216 @@
   ],
 )
 
+#example(
+  title: [
+    实数数轴完整性公理表明：任一有上界的实数集合必有一个实数上确界。
+    + 如果将实数换为有理数，证明这个结论是错误的。
+    + 如果将实数换为自然数，这个结论是对还是错？
+  ],
+  solutions: [
+    + 太绝对化，可能不存在一个有理数集合既是其上界又是所有上界中最小的那个数。例如${x mid(|) x^2<5}$集合中上确界就为$sqrt(5)$。
+    + 对，因为该集合为自然数集合，在集合中最大的那个自然数自然就是该集合的上确界。
+  ],
+)
+
+== 不等式与绝对值
+
+#example(
+  title: [
+    在实数轴上表示下面的区间 \
+    (a) $[-1,1]$ ~~ (b) $(-4,1]$ ~~ (c) $(-4,1)$ ~~ (d) $[1,4]$ ~~ (e) $[-1,oo]$ ~~ (f) $(-oo,0]$
+
+  ],
+  solutions: [
+
+  ],
+)
+
+#example(
+  title: [
+    用习题1的区间符号来表示@problem1 所示各区域
+    #figure(image("./asset/image/inequalities.png", width: 60%), caption: [])<problem1>
+  ],
+  solutions: [
+
+  ],
+)
+
+#pad(0em)[#POINT[在习题3～26中，用区间符号表示不等式的解集。]]
+
+#line_dc
+
 #example(title: [
-  实数数轴完整性公理表明：任一有上界的实数集合必有一个实数上确界。
-  + 如果将实数换为有理数，证明这个结论是错误的。
-  + 如果将实数换为自然数，这个结论是对还是错？
+  $x-7<2x-5$
 ], solutions: [
-  + 太绝对化，可能不存在一个有理数集合既是其上界又是所有上界中最小的那个数。例如${x mid(|) x^2<5}$集合中上确界就为$sqrt(5)$。
-  + 对，因为该集合为自然数集合，在集合中最大的那个自然数自然就是该集合的上确界。
+
+])
+
+#example(title: [
+  $3x-5<4x-6$
+], solutions: [
+
+])
+
+#example(title: [
+  $7x-2 lt.eq.slant 9x+3$
+], solutions: [
+
+])
+
+#example(title: [
+  $5x-3>6x-4$
+], solutions: [
+
+])
+
+#example(title: [
+  $-4<3x+2<5$
+], solutions: [
+
+])
+
+#example(title: [
+  $-3<4x-9<11$
+], solutions: [
+
+])
+
+#example(title: [
+  $-3<1-6x lt.eq.slant 4$
+], solutions: [
+
+])
+
+#example(title: [
+  $4<5-3x<7$
+], solutions: [
+
+])
+
+#example(title: [
+  $x^2+2x-12<0$
+], solutions: [
+
+])
+
+#example(title: [
+  $x^2-5x-6>0$
+], solutions: [
+
+])
+
+#example(title: [
+  $2x^2+5x-3>0$
+], solutions: [
+
+])
+
+#example(title: [
+  $4x^2-5x-6<0$
+], solutions: [
+
+])
+
+#example(title: [
+  $(x+4)/(x-3) lt.eq.slant 0$
+], solutions: [
+
+])
+
+#example(title: [
+  $(3x-2)/(x-1) gt.eq.slant 0$
+], solutions: [
+
+])
+
+#example(title: [
+  $2/x<5$
+], solutions: [
+
+])
+
+#example(title: [
+  $7/(4x) lt.eq.slant 7$
+], solutions: [
+
+])
+
+#example(title: [
+  $1/(3x-2) lt.eq.slant 4$
+], solutions: [
+
+])
+
+#example(title: [
+  $3/(x+5)>2$
+], solutions: [
+
+])
+
+#example(title: [
+  $(x+2)(x-1)(x-3)>0$
+], solutions: [
+
+])
+
+#example(title: [
+  $(2x+3)(3x-1)(x-2)<0$
+], solutions: [
+
+])
+
+#example(title: [
+  $(2x-3)(x-1)^2(x-3) gt.eq.slant 0$
+], solutions: [
+
+])
+
+#example(title: [
+  $(2x-3)(x-1)^2(x-3)>0$
+], solutions: [
+
+])
+
+#example(title: [
+  $x^3-5x^2-6x<0$
+], solutions: [
+
+])
+
+#example(title: [
+  $x^3-x^2-x+1>0$
+], solutions: [
+
+])
+
+#line_dc
+
+#example(title: [
+  判断下列不等式的正误 \
+  (a) $-3 < -7$ ~~ (b) $-1 > -17$ ~~ (c) $-3< -22/7$
+], solutions: [
+
+])
+
+#example(title: [
+  判断下列不等式的正误 \
+  (a) $-5 > - sqrt(26)$ ~~ (b) $ 6/7<34/39$ ~~ (c) $-5/7 < - 44/59$
+], solutions: [
+
+])
+
+#example(title: [
+  假设$a>0"，"b>0$，证明下列命题。提示：每个命题都有两个部分：证明$=>$，和证明$arrow.l.double$。\
+  (a) $a<b <=> a^2<b^2$ ~~ (b) $a<b<=>1/a>1/b$
+], solutions: [
+
+])
+
+#example(title: [
+  如果$a lt.eq.slant b$，那么下面哪一个是正确的。\
+  (a) $a^2 lt.eq.slant a b$ ~~ (b) $a-3 lt.eq.slant b-3$ ~~ (c) $$
+], solutions: [
+
 ])
 

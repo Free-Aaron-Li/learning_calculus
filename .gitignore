@@ -1,0 +1,23 @@
+** VScode **
+.vscode/
+
+** IDEA **
+.idea/
+.DS_Store
+
+** node **
+node_modules/
+
+** nvim **
+package-lock.json
+yarn.lock
+
+** git **
+.history/
+logs/
+target/
+pid
+
+** PDF展示文件 **
+*/*.pdf
+
