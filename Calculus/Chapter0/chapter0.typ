@@ -1,4 +1,4 @@
-#import "../typst/template/reference.typ": POINT,NOTE,TIP,cn_fake-italic,indent,example,example_dc,line_cs,line_dc,Concept_review
+#import "../typst/template/reference.typ": POINT,NOTE,TIP,cn_fake-italic,indent,example,example_dc,line_cs,line_dc,Concept_review,THEOREM,relational_expression
 #import "../typst/template/page/basic.typ":basic,mitex
 
 #let center_title = [LEARNING\ Calculus]
@@ -371,6 +371,18 @@ $
   |x|<|y| <=> x^2<y^2
 $
 
+#Concept_review[
+  + 集合${x mid(|) -1 lt.eq.slant x <5}$用区间表示为$underline([-1,5))$；集合${x mid(|) x lt.eq.slant -2}$用区间表示为$underline((-oo,-2])$。
+  + 如果$a/b<0$，则$a<0$，$underline(b>0)$或者是$a>0$，$underline(b<0)$。
+  + 下面哪一个表达式总是正确的？
+    + $|-x|=x$  false
+    + $|x|^2=x^2$ true
+    + |x y|=|x||y| true
+    + $sqrt(x^2)=x$ false
+  + 不等式$|x-2| lt.eq.slant 3$等价于$underline(-1)$$lt.eq.slant x lt.eq.slant$$underline(5)$。
+]
+
+
 == 直角坐标系
 
 在平面中画出两条实线，一条水平（x轴），一条竖直（y轴）。二者交点在零点，这两条直线被称为*坐标轴*。交点用$Omicron$表示，称为*原点*。该坐标轴将平面分为4个区域，称为*象限*。分别用I，II，III，IV来表示。
@@ -424,6 +436,12 @@ $#indent
 
 #POINT[垂直直线] 两条直线的斜率互为负倒数，那么二者为垂直直线。该条件为充分必要条件。
 
+#Concept_review[
+  + 点$(-2,3)$和点$(x,y)$之间的距离是$underline(sqrt((x+2)^2+(y-3)^2))$。
+  + 以5为半径，点$(-4,2)$为圆心的圆方程是$underline((x+4)^2+(x-2)^2=25)$。
+  + 点$(-2,3)$和点$(5,7)$组成线段的中点是$underline(("3/2，"5))$。
+  + 通过点$(a,b)$和$(c,d)$两点的直线的斜率m=$underline("d-b/c-a")$$(a!=c)$。
+]
 == 方程的图形
 
 #POINT[图形的对称性]
@@ -436,15 +454,259 @@ $#indent
 
 #POINT[抛物线] 方程形如$y=a x^2+b x+c$或$x=a y^2+b y +c (a!=0)$的图形为抛物线。其中，
 #pad(x:2em)[
-+ 对于$y=a x^2+b x +c (a!=0)$，当$a>0$时开口向上，当$a<0$时开口向下。
++ 对于$y=a x^2+b x+c (a!=0)$，当$a>0$时开口向上，当$a<0$时开口向下。
 + 对于$x=a y^2+b y+c (a!=0)$，当$a>0$时开口向上，当$a<0$时开口向下。
 ]
 
-== 函数及其图像
+#Concept_review[
+  + 假如任何情况下$(x,y)$在图形上，则$(-x,y)$也在同一图形上，那么这个图形关于#underline[y轴]对称。
+  + 若点$(-4,2)$在一个关于原点对称的图形上，那么点$underline((4,-2))$也在图形上。
+  + 方程$y=(x+2)(x-1)(x-4)$的图形，在y轴上的截距为#underline[8]，在x轴上的截距为$underline(-2"，"1"，"4)$。
+  + 若$a=0,y=a x^2+b x+c$的图形为#underline[直线]；若$a!=0,y=a x^2+b x +c$的图形为#underline[抛物线]。
+]
+
+== 函数及其图像 
 
 #NOTE[
   函数$f$是一个法则，他将一个集合（称为定义域）中的每一个点$x$，唯一对应第二个集合中的一个值$f(x)$。这样得到的所有值的集合称为这个函数的值域。
 ]
+
+#POINT[定义域和值域] 定义域：函数的输入，值域：函数的输出；*自然定义域*：使函数有意义 一切实数。
+
+当函数的对应法则以等式$y=f(x)$的形式给出时，称$x$为*自变量*，$y$为*因变量*。定义域中每一个数都可能被作为自变量使用。
+
+#POINT[偶函数与奇函数] 有$f(-x)=f(x)$，函数图形关于$y$轴对称，称之为*偶函数*；有$f(-x)=-f(x)$，函数图形关于原点对称，成为*奇函数*。
+
+#POINT[两种特殊类型的函数] 
+
+#pad(x:2em)[
++ *绝对值函数*
+
+  定义为：
+  #pad(x:4em)[
+  $
+    |x| = cases(
+      1 x &&med(x>=0),
+      2 -x &&med(x < 0)
+    )
+  $  
+  ]
++ *最大整数函数*
+
+  定义为：$[x]="小于或等于"x"的最大整数。"$
+]
+
+#Concept_review[
+  + 一个函数允许输入的数值的集合叫做函数的#underline[定义域]；函数可以取到的数值的集合叫做函数的#underline[值域]。
+  + 如果$f(x)=3x^2$，那么$f(2u)= underline(12u^2)$，$f(x+h)= underline(3x^2+6x h+3h^2)$。
+  + 如果当$|x|$增大时，$f(x)$越来越接近$L$，那么直线$y=L$是函数$f$的图形的一条#underline[渐近线]。
+  + 如果$f(-x)=f(x)$对于定义域内所有的值都成立，那么函数$f$被成为一个#underline[偶]函数；如果$f(-x)=-f(x)$对于定义域内所有的值都成立，那么函数$f$被称为一个#underline[奇]函数；在第一种情况下，函数$f$的图形关于#underline[y轴]对称；在第二种情况下，函数$f$的图形关于#underline[原点]对称。
+]
+
+== 函数的运算
+
+#POINT[和、差、积、商和幂运算] 需要小心应对运算对象的定义域。
+
+#POINT[复合运算] 定义为：
+$
+(g compose f)(x)=g(f(x))
+$
+需要注意的是，$(g compose f)(x)$和$(f compose g)(x)$并不是相等的。同样需要小心复合函数的定义域。
+
+对于$(g compose f)(x)$函数来说，其定义域必须符合以下条件的$x$值的集合：
+#pad(x:2em)[
+  + $x$属于函数$f$的定义域。
+  + $f(x)$属于函数$g$的定义域。
+]
+
+#POINT[函数的部分分类] 
+
+如$f(x)=k$，k为常数，则该函数被称为*常数函数*；对于$f(x)=x$
+，其斜率为1且穿过原点，被称为*恒等函数*。
+
+对于任何可以通过对常数函数和恒等函数进行加、减和乘法运算得到的函数被称为*多项式函数*（幂函数），
+其具有以下形式：
+$
+f(x)=a_n x^n+a_(n-1) x^(x-1)+...+a_1 x^1+a_0
+$
+
+其中，$a$为常数；$n$是一个非负整数。如果$a_n != 0$，n就是多项式函数的*次数*。
+特别地，$f(x)=a x+b$是一次的多项式，或者称为*线性函数*，$f(x)=a x^2+b x +c$是一个二次多项式函数，或者称为*二次函数*。
+
+多项式函数的商称为*有理函数*，有理函数的定义域是使得分母不为零的所有实数。
+
+一个*显式代数函数*是常数函数和恒等函数通过加、减、乘、除和根式运算得来的函数。
+
+幂函数、三角函数、反三角函数、指数和对数函数统称为微积分的基本初等函数。
+
+#Concept_review[
+  + 已知函数$f(x)=x^2+1$，则$f^3(x)$的值为$underline(x^6+3x^4+3x^2+1)$。
+  + 复合函数$f compose g$在$x$处的值$(f compose g)(x)= underline(f(g(x)))$。
+  + 与函数$y=f(x)$的图形相比，函数$y=f(x+2)$的图形是向#underline[左]移动了#underline[2]个单位。
+  + 有理函数的定义是#underline[两个多项式函数的商]。
+]
+
+== 三角函数
+
+#POINT[正弦、余弦函数的基本性质]
+
++ 对单位圆上弧长为$t$的点$P(x,y)$，称$sin t=y$为正弦函数，$cos t=x$为余弦函数。
++ 由于$t$可以取任意值，所以正弦、余弦函数的定义域均为*R*；由于$x$、$y$的值总在$[-1,1]$之间，所以二者函数的值域为$[-1,1]$。
++ 正弦函数是奇函数、余弦函数是偶函数。
++ $ sin(pi/2-t)=cos t, cos(pi/2-t)=sin t $
++ $ sin^2 t+cos^2 t=1 $
++ 正弦函数和余弦函数的图形相同，只是前者向前移动了$pi/2$距离。
+
+#indent
+#POINT[正弦、余弦函数的图形]
+
+
+#figure(
+table(
+  columns: 3,
+  stroke: none,
+  table.hline(),
+  $t$,$sin t$,$cos t$,
+  table.hline(),
+  $0$,$0$,$1$,
+  $pi"/6"$,$"1/2"$,$sqrt(3)"/2"$,
+  $pi"/4"$,$sqrt(2)"/2"$,$sqrt(2)"/2"$,
+  $pi"/3"$,$sqrt(3)"/2"$,$"1/2"$,
+  $pi"/2"$,$"1"$,$"0"$,
+  $2pi"/3"$,$sqrt(3)"/2"$,$-1"/2"$,
+  $3pi"/4"$,$sqrt(2)"/2"$,$-sqrt(2)"/2"$,
+  $5pi"/6"$,$"1/2"$,$-sqrt(3)"/2"$,
+  $pi$,$0$,$-1$,
+  table.hline(),
+),
+caption:[
+   正余弦函数常见值
+]
+)
+
+#POINT[三角函数的周期和振幅] 一个函数$f(x)$是周期函数，如果存在正数$p$，使得对于定义域内的所有实数$x$，
+$f(x+p)=f(x)$成立，最小的正数$p$就称为函数 的*最小正周期*，也成为函数的*周期*。
+
+对于$sin(x+2pi)=sin(x)$，在所有定义域内均满足，那么我们说$sin x$的周期是$2pi$。同样$cos x$也满足条件。
+
+那么定义，函数$sin(a t)$的周期是$(2pi)/a$，因为
+$
+sin[a(t+(2pi)/a)]=sin[a t+2pi]=sin(a t)
+$
+
+
+#indent
+如果一个周期函数$f(x)$得到一个最小值和一个最大值，那么我们将周期函数的*振幅*A定为最高点与最低点之间距离的一半。
+
+总结，对$a>0"，"A>0$
+
+#relational_expression[
+$
+C+A sin(a(t+b))"和"C+A cos(a(t+b))"的周期为" (2pi)/2"，振幅为"A"。"
+$
+]
+
+#example_dc(
+  title:[
+    密苏里州圣路易的正常温度范围是从37$degree.f$（1月15日）到89$degree.f$（7月15日），且正常温度关于时间的函数的图形大致成一个正弦曲线。\
+    (a) 求C、A、a和b的值，使得$T(t)=C+A sin(a(t+b))$是正常温度关于时间的合理函数模型（$t$的单位是月）。\
+    (b) 用这个函数模型计算5月15日的正常温度。
+  ],
+  solutions:[
+    (a) $t$的单位为月，且函数关于年份，所以$(2pi)/a=12$，得到$a=pi/6$。由题得出振幅$A=1/2(89-37)=26$。值C等于最大值与最小值和的二分之一，$C=1/2(37+89)=63$。
+    可以得出函数$T(t)$的简要形式：
+    $
+    T(t)=63+26sin(pi/6(t+b))
+    $
+    在1月15日取得最小温度，那么可以得到两点：
+    #pad(x:2em)[
+      + $T(1/2)=37$
+      + $pi/6 t=-pi/2$
+      + 函数图形发生右移，才会在$1/2$处温度处于最低点
+    ]
+
+    由此，我们可以得出当$t=-3$时，函数$T(t)$向右偏移$1/2-(-3)$单位。由此得出函数$T(t)$：
+    $
+    T(t)=63+26sin(pi/6(t-7/2))
+    $
+
+    (b) 5月15日等价于$t=4.5$，带入函数得到：
+    $
+    T(4.5)&=63+26sin(pi/6(4.5-7/2)) \
+    &=63+26sin(pi/6) \
+    &=76
+    $
+
+    实际上圣路易5月15日的正常温度是75$degree.f$，计算所得误差高出1$degree.f$。说明模型计算还是十分精确的。
+  ]
+)
+
+#POINT[其他4个三角函数] 
+
+#relational_expression[
+  $
+  tan t&=(sin t)/(cos t) med med cot t&=(cos t)/(sin t) \
+  sec t&=1/(cos t) med med csc t&=1/ (sin t)
+  $
+]
+
+推导可得：
+#relational_expression[
+  $
+  1+tan^2t=sec^2t"，"1+cot^2t=csc^2t
+  $
+]
+
+#POINT[不同角度单位的变换] 角通常是以角度制或弧度（rad）制为计量单位的，1rad的定义是单位圆上长度为1的弧所对应的圆心角的大小。
+
+需要注意到角度制与弧度制的转换
+#relational_expression[
+  $
+  180 degree = pi "rad" approx 3.1415927 "rad"
+  $
+]
+
+在一段长度为$s$且在半径为$r$的圆上的弧所对应的圆心角为$t$，满足下面关系式：
+#relational_expression[
+  $
+  s/(2pi r)=t/(2pi)
+  $
+]
+
+#Concept_review[
+  + 函数$sin x$的定义域是$underline(R)$；值域是$underline([-1,1])$。
+  + 函数$cos x$的周期是$underline(2pi)$；函数$sin x$的周期是$underline(2pi)$；函数$tan x$的周期是$underline(pi)$。
+  + 因为$sin(-x)=sin x$，所以，函数$sin x$是#underline[奇]函数（奇或偶）；因为$cos(-x)=cos x$，所以，函数$cos x$是#underline[偶]函数（奇或偶）。
+  + 角$theta$的顶点在原点，始边在$x$轴（正向）上，如果点$(-4,3)$在该角的终边上，那么，$cos theta= underline(-"4/5")$。
+]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
