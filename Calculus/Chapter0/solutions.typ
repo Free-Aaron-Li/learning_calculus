@@ -1084,7 +1084,18 @@
 
   ],
   solutions: [
-
+    (a)
+    #figure(image("./asset/image/0_2_1_a.png"))
+    (b)
+    #figure(image("./asset/image/0_2_1_b.png"))
+    (c)
+    #figure(image("./asset/image/0_2_1_c.png"))
+    (d)
+    #figure(image("./asset/image/0_2_1_d.png"))
+    (e)
+    #figure(image("./asset/image/0_2_1_e.png"))
+    (f)
+    #figure(image("./asset/image/0_2_1_f.png"))
   ],
 )
 
@@ -1094,7 +1105,11 @@
     #figure(image("./asset/image/inequalities.png", width: 60%), caption: [])<problem1>
   ],
   solutions: [
-
+    \
+    (a) $(2,7)$ \
+    (b) $[-3,4]$ \
+    (c) $(-oo,-2]$ \
+    (d) $[-1,3]$
   ],
 )
 
@@ -1105,145 +1120,252 @@
 #example(title: [
   $x-7<2x-5$
 ], solutions: [
-
+  $
+    x-7         &<2x-5\
+    x-7+5-x     &<2x-5+5-x\
+    -2          &<x \
+    "解集：" &x in (-2,+oo)
+  $
+  #figure(image("./asset/image/0_2_3.png"))
 ])
 
 #example(title: [
   $3x-5<4x-6$
 ], solutions: [
-
+  $
+    3x-5-3x+6  &<4x-6-3x+6 \
+    x          &>1 \
+    "解集："&x in (1,+oo)
+  $
+  #figure(image("asset/image/0_2_4.png"))
 ])
 
 #example(title: [
   $7x-2 lt.eq.slant 9x+3$
 ], solutions: [
-
+  $
+    2x         &gt.eq.slant -5 \
+    x          &gt.eq.slant -5/2 \
+    "解集："&x in [-5/2,+oo)
+  $
+  #figure(image("asset/image/0_2_5.png"))
 ])
 
 #example(title: [
   $5x-3>6x-4$
 ], solutions: [
-
+  $
+    5x-3-5x+3  &>6x-4-5x+3 \
+    1          &>x \
+    "解集："&x in (-oo,1)
+  $
+  #figure(image("asset/image/0_2_6.png"))
 ])
 
 #example(title: [
   $-4<3x+2<5$
 ], solutions: [
-
+  $
+    -4-2<      &3x<5-2 \
+    -2<        &x<1 \
+    "解集："&x in (-2,1)
+  $
+  #figure(image("asset/image/0_2_7.png"))
 ])
 
 #example(title: [
   $-3<4x-9<11$
 ], solutions: [
-
+  $
+    -3+9<      &4x<11+9 \
+    3/2<       &x<5 \
+    "解集："&x in (3/2,5)
+  $
+  #figure(image("asset/image/0_2_8.png"))
 ])
 
 #example(title: [
   $-3<1-6x lt.eq.slant 4$
 ], solutions: [
-
+  $
+    -3 lt.eq.slant   &6x < 4 \
+    -1/2 lt.eq.slant &x <2/3 \
+    "解集："      &x in [-1/2,2/3)
+  $
+  #figure(image("asset/image/0_2_9.png"))
 ])
 
 #example(title: [
   $4<5-3x<7$
 ], solutions: [
-
+  $
+    -1<        &-3x<2 \
+    -2<        &3x<1 \
+    -2/3<      &x<1/3 \
+    "解集："&x in (-2/3,1/3)
+  $
+  #figure(image("asset/image/0_2_10.png"))
 ])
 
 #example(title: [
   $x^2+2x-12<0$
 ], solutions: [
-
+  $
+    d=2^2-4(1*-12)\
+    x=(-2 plus.minus sqrt(d))/(2*1) \
+    x_1=-1+sqrt(13),x_2=-1-sqrt(13) \
+    "解集："x in (-1-sqrt(13),-1+sqrt(13))
+  $
+  #figure(image("asset/image/0_2_11.png"))
 ])
 
 #example(title: [
   $x^2-5x-6>0$
 ], solutions: [
-
+  $
+    (x-6)(x+1)>0 \
+    x_1=-1,x_2=6 \
+    "解集："x in (-oo,-1)union(6, +oo)
+  $
 ])
 
 #example(title: [
   $2x^2+5x-3>0$
 ], solutions: [
-
+  $
+    (x+3)(2x-1)>0 \
+    x_1=-3,x_2=1/2 \
+    "解集："x in (-oo,-3)union(1/2, +oo)
+  $
 ])
 
 #example(title: [
   $4x^2-5x-6<0$
 ], solutions: [
-
+  $
+    (4x+3)(x-2)<0 \
+    x_1=-3/4,x_2=2 \
+    "解集："x in (-3/4,2)
+  $
 ])
 
 #example(title: [
   $(x+4)/(x-3) lt.eq.slant 0$
 ], solutions: [
-
+  $
+    x_1=-4,x_2=3 \
+    "解集：" x in [-4,-3)
+  $
 ])
 
 #example(title: [
   $(3x-2)/(x-1) gt.eq.slant 0$
 ], solutions: [
-
+  $
+    x_1=2/3,x_2=1 \
+    "解集："x in (-oo,2/3)union(1, +oo)
+  $
 ])
 
 #example(title: [
   $2/x<5$
 ], solutions: [
-
+  $
+    2/x-5<0 \
+    (2-5x)/x<0 \
+    x_1=0,x_2=2/5 \
+    "解集："x in (-oo,0)union(2/5, +oo)
+  $
 ])
 
 #example(title: [
   $7/(4x) lt.eq.slant 7$
 ], solutions: [
-
+  $
+    7/(4x)-7 lt.eq.slant 0 \
+    (7-28x)/(4x) lt.eq.slant 0 \
+    x_1=0,x_2=1/4 \
+    "解集："x in (-oo,0)union[1/4,+oo)
+  $
 ])
 
 #example(title: [
   $1/(3x-2) lt.eq.slant 4$
 ], solutions: [
-
+  $
+    (1-4(3x-2))/(3x-2) lt.eq.slant 0 \
+    (9-12x)/(3x-2) lt.eq.slant 0 \
+    x_1=3/4,x_2=2/3 \
+    " 解集：" x in (-oo,2/3)union[3/4,+oo)
+  $
 ])
 
 #example(title: [
   $3/(x+5)>2$
 ], solutions: [
-
+  $
+    (3-2(x+5))/(x+5)>0 \
+    (-2x-7)/(x+5)>0 \
+    x_1=-7/2,x_2=-5 \
+    "解集：" x in (-5,-7/2)
+  $
 ])
 
 #example(title: [
   $(x+2)(x-1)(x-3)>0$
 ], solutions: [
-
+  $
+    x_1=-2,x_2=1,x_3=3 \
+    "解集："x in (-2,1)union(3, +oo)
+  $
 ])
 
 #example(title: [
   $(2x+3)(3x-1)(x-2)<0$
 ], solutions: [
-
+  $
+    x_1=-3/2,x_2=1/3,x_3=2 \
+    "解集："x in (-oo,-3/2)union(1/3, 2)
+  $
 ])
 
 #example(title: [
   $(2x-3)(x-1)^2(x-3) gt.eq.slant 0$
 ], solutions: [
-
+  $
+    x_1=3/2,x_2=1,x_3=3 \
+    "解集："x in (-oo,3/2]union[3,+oo)
+  $
 ])
 
 #example(title: [
   $(2x-3)(x-1)^2(x-3)>0$
 ], solutions: [
-
+  $
+    x_1=3/2,x_2=3,x_3=3 \
+    "解集："(-oo,1)union(1, 3/2)union(3, +oo)
+  $
 ])
 
 #example(title: [
   $x^3-5x^2-6x<0$
 ], solutions: [
-
+  $
+    x(x^2-5x-6)<0 \
+    x(x+1)(x-6)<0 \
+    x_1=0,x_2=-1,x_3=6 \
+    "解集："x in (-oo,-1)union(0, 6)
+  $
 ])
 
 #example(title: [
   $x^3-x^2-x+1>0$
 ], solutions: [
-
+  $
+    (x^2-1)(x-1)>0 \
+    x_1=-1,x_2=1 \
+    "解集："x in (-1,1)union(1, +oo)
+  $
 ])
 
 #line_dc
@@ -1252,26 +1374,597 @@
   判断下列不等式的正误 \
   (a) $-3 < -7$ ~~ (b) $-1 > -17$ ~~ (c) $-3< -22/7$
 ], solutions: [
-
+  (a) 错 \
+  (b) 对 \
+  (c) 错 \
 ])
 
 #example(title: [
   判断下列不等式的正误 \
   (a) $-5 > - sqrt(26)$ ~~ (b) $ 6/7<34/39$ ~~ (c) $-5/7 < - 44/59$
 ], solutions: [
-
+  (a) 对 \
+  (b)
+  $
+    6/7=234/273 \
+    34/39=238/273 \
+    "结论：对"
+  $
+  (c)
+  $
+    -5/7=-295/413 \
+    -44/59=-308/413 \
+    "结论：错"
+  $
 ])
 
 #example(title: [
   假设$a>0"，"b>0$，证明下列命题。提示：每个命题都有两个部分：证明$=>$，和证明$arrow.l.double$。\
   (a) $a<b <=> a^2<b^2$ ~~ (b) $a<b<=>1/a>1/b$
 ], solutions: [
+  (a)
+  $
+    "证明"=>"：" \
+    a<b             &=> a b<b^2 \
+    a<b             &=a^2<a b \
+    a^2 < a b < b^2 &=> a^2<b^2 \
+
+    "证明"arrow.l.double"：" \
+    a^2<b^2         &=> a!=b \
+    0<(a-b)^2       &=a^2-2a b +b^2 \
+                    &<b^2-2a b +b^2=2b(b-a) \
+                    &=>b-a \
+                    &=>b>a
+  $
+  (b)
+  $
+    a<b <=> a/b<1 =a/b*1/a<1/a <=>1/b<1/a
+  $
+])
+
+#example(
+  title: [
+    如果$a lt.eq.slant b$，那么下面哪一个是正确的。\
+    (a) $a^2 lt.eq.slant a b$ ~~ (b) $a-3 lt.eq.slant b-3$ ~~ (c) $a^3 lt.eq.slant a^2b$ ~~ (d) $-a lt.eq.slant -b$
+  ],
+  solutions: [
+    (a) 错（a为负，b为正） \
+    (b) 对 \
+    (c) 对 \
+    (d) 错（a和b均为负）
+  ],
+)
+
+#example(
+  title: [
+    找出所有同时满足两个不等式的$x$的值。\
+    (a)$3x+7>1$和$2x+1<3$ ~~ (b)$3x+7>1$和$2x+1>-4$ ~~ (c) $3x+7>1$和$2x+1< -4$
+  ],
+  solutions: [
+    (a)
+    $
+      3x+7>1 => x> -2 \
+      2x+1<3 => x<1 \
+      "解集："x in (-2,1)
+    $
+    (b)
+    $
+      3x+7>1 => x> -2 \
+      2x+1> -4 => x> -5/2 \
+      "解集："x in (-2, +oo)
+    $
+    (c)
+    $
+      3x+7>1 => x> -2 \
+      2x+1 < -4 => x< -5/2 \
+      "解集："x in emptyset
+    $
+  ],
+)
+
+#example(
+  title: [
+    找出所有至少满足其中一个不等式的$x$的值。\
+    (a)$2x-7>1$和$2x+1<3$ ~~ (b)$2x-7 lt.eq.slant 1$和$2x+1<3$ ~~ (c) $2x-7 lt.eq.slant 1$和$2x+1>3$
+  ],
+  solutions: [
+    (a)
+    $
+      2x-7>1 => x>4 \
+      2x+1<3 => x<1 \
+      "解集："x in (4,1)
+    $
+    (b)
+    $
+      2x-7 lt.eq.slant 1 => x lt.eq.slant 4 \
+      2x+1<3 => x<1 \
+      "解集："x in (-oo,4)
+    $
+    (c)
+    $
+      2x-7 lt.eq.slant 1 => x lt.eq.slant 4 \
+      2x+1 >3 => x >1 \
+      "解集："x in R
+    $
+  ],
+)
+
+#example(
+  title: [
+    求解$x$，并用区间符号表示结果。\
+    (a) $(x+1)(x^2+2x-7) gt.eq.slant x^2-1$ ~~ (b) $x^4-2x^2 gt.eq.slant 8$ ~~ (c) $(x^2+1)^2-7(x^2+1)+10 <0$
+  ],
+  solutions: [
+    (a)
+    $
+      (x+1)(x^2+2x-7)-(x+1)(x-1) gt.eq.slant 0 \
+      (x+1)(x^2+x-6) gt.eq.slant 0 \
+      (x+1)(x+3)(x-2) gt.eq.slant 0 \
+
+      x_1=-1,x_2=-3,x_3=2 \
+      "解集："x in (-3,-1)union(2, +oo)
+    $
+    (b)
+    $
+      x^4-2x^2-8 gt.eq.slant 0 \
+      (x^2-4)(x^2+2) gt.eq.slant 0 \
+      x_1=-2,x_2=2 \
+      "解集："x in (-oo,-2)union(2, +oo)
+    $
+    (c)
+    $
+      "令"(x^2+1)=b \
+      "原式"=b^2-7b+10<0 \
+      (b-2)(b-5)<0 \
+      "代入"(x^2+1)"："(x^2-1)(x^2-4)<0 \
+      (x-1)(x+1)(x-2)(x+2)<0\
+      x_1=-1,x_2=1,x_3=-2,x_4=2 \
+      "解集："x in (-2,-1)union(1, 2)
+    $
+  ],
+)
+
+#example(title: [
+  解不等式，并用区间符号表示结果。\
+  (a) $1.99<1/x<2.01$ ~~ (b)$2.99<1/(x+2)<3.01$
+], solutions: [
+  (a)
+  $
+    because 1.99<1/x<2.01 therefore x>0 \
+    1.99<1/x<2.01 => 1.99x<1 union 1< 2.01x \
+    x<1/1.99 union x >1/2.01 \
+    "解集：" x in (1/2.01,1/1.99)
+  $
+  (b)
+  $
+    because 2.99<1/(x+2)<3.01 therefore x >0 \
+    2.99(x+2)<1 union 3.01(x+2)>1 \
+    x< -4.98/2.99 union x> -5.02/3.01 \
+    "解集："x in (-5.02/3.01,-4.98/2.99)
+  $
+])
+
+#pad(0em)[#POINT[在习题35～44中，找出不等式的解集。]]
+
+#line_dc
+
+#example(title: [
+  $|x-2| gt.eq.slant 5$
+], solutions: [
+  $
+    x-2 gt.eq.slant 5 union x-2 lt.eq.slant -5 \
+    x gt.eq.slant 7 union x lt.eq.slant -3 \
+    "解集："x in (-oo,-3] union [7,+oo)
+  $
+])
+
+#example(title: [
+  $|x+2|<1$
+], solutions: [
+  $
+    -1< x+2 <1 \
+    -3 < x < -1 \
+    "解集："x in (-3,-1)
+  $
+])
+
+#example(title: [
+  $|4x+5| lt.eq.slant 10$
+], solutions: [
+  $
+    -10 lt.eq.slant 4x+5 lt.eq.slant 10 \
+    -15 lt.eq.slant 4x lt.eq.slant 5 \
+    -15/4 lt.eq.slant x lt.eq.slant 5/4 \
+    "解集："x in (-15/4,5/4)
+  $
+])
+
+#example(title: [
+  $|2x-1| >2$
+], solutions: [
+  $
+    2x-1 < -2 union 2x-1 >2 \
+    x < -1/2 union x>3/2 \
+    "解集："x in (-oo,-1/2) union (3/2,+oo)
+  $
+])
+
+#example(title: [
+  $|(2x)/7-5| gt.eq.slant 7 $
+], solutions: [
+  $
+    (2x)/7-5 gt.eq.slant 7 union (2x)/7 -5 lt.eq.slant -7 \
+    x gt.eq.slant 42 union x lt.eq.slant -7 \
+    "解集："x in (-oo,-7] union [42,+oo)
+  $
+])
+
+#example(title: [
+  $|x/4+1|<1$
+], solutions: [
+  $
+    -1<x/4+1<1 \
+    -2<x/4<0 \
+    -8<x<0 \
+    "解集："x in (-8,0)
+  $
+])
+
+#example(title: [
+  $|5x-6|>1$
+], solutions: [
+  $
+    5x-6>1 union 5x-6< -1 \
+    x>7/5 union x <1 \
+    "解集："x in (-oo,1)union (7/5,+oo)
+  $
+])
+
+#example(title: [
+  $|2x-7| >3$
+], solutions: [
+  $
+    2x-7>3 union 2x-7 < -3 \
+    x>5 union x <2 \
+    "解集："x in (-oo,2)union(5, +oo)
+  $
+])
+
+#example(title: [
+  $|1/x-3| >6$
+], solutions: [
+  $
+    1/x-3>6 union 1/x-3< -6 \
+    1/x>9 union 1/x< -3 \
+    (1-9x)/x>0 union (1+3x)/x<0 \
+    x_1=0,x_2=1/9,x_3=-1/3 \
+    "解集："x in (-1/3,0)union(0, 1/9)
+  $
+])
+
+#example(title: [
+  $|2+5/x| >1$
+], solutions: [
+  $
+    2+5/x>1 union 2+5/x< -1 \
+    5/x> -1 union 5/x < -3 \
+    (5+x)/x>0 union (5+3x)/x<0 \
+    x_1=0,x_2=-5,x_3=-5/3 \
+    "解集："x in (-oo,-5)union(-5/3, 0)union(0, +oo)
+  $
+])
+
+#line_dc
+
+#pad(x: 0em)[#POINT[在习题45～48中，用二次方程的求根公式，求不等式的解。]]
+
+#line_dc
+
+#example(title: [
+  $x^2-3x-4 gt.eq.slant 0$
+], solutions: [
+  $
+    d=(-3)^2- 4(-4)=25 \
+    x=(3 plus.minus sqrt(25))/2 \
+    x_1=4,x_2=-1 \
+    "解集："x in (-oo,-1]union[4,+oo)
+  $
+])
+
+#example(title: [
+  $x^2-4x+4 lt.eq.slant 0$
+], solutions: [
+  $
+    d=(-4)^2-4(4)=0 \
+    x_1=x_2=(4 plus.minus 0)/2=2 \
+    "解集："(-oo,2]
+  $
+])
+
+#example(title: [
+  $3x^2+17x-6>0$
+], solutions: [
+  $
+    d=17^2-4(3*-6)=361 \
+    x=(-17 plus.minus sqrt(361))/6 =(-17 plus.minus 19)/6 \
+    x_1=-6,x_2=1/3 \
+    "解集："x in (-oo,-6)union(1/3, +oo)
+  $
+])
+
+#example(title: [
+  $14x^2+11x-15 lt.eq.slant 0$
+], solutions: [
+  $
+    d=11^2-4(14*-15)=961 \
+    x=(-11 plus.minus sqrt(961))/28 = (-11 plus.minus 31)/28 \
+    x_1=5/7,-3/2 \
+    "解集："x in (-3/2,5/7)
+  $
+])
+
+#line_dc
+
+#pad(x: 0em)[#POINT[在习题49～52中，证明所给的推论是正确的。]]
+
+#line_dc
+
+#example(title: [
+  $|x-3| <0.5 => |5x-15| <2.5$
+], solutions: [
+  证明如下：
+  $
+    |x-3|<0.5 =>5|x-3|<2.5=>|5x-15|<2.5
+  $
+])
+
+#example(title: [
+  $|x+2|<0.3 => |4x+8| <1.2$
+], solutions: [
+  证明如下：
+  $
+    |x+2|<0.3 => 4|x+3|<4*0.3=>|4x+8|<1.22
+  $
+])
+
+#example(title: [
+  $|x-2| <epsilon/6 => |6x-12| < epsilon$
+], solutions: [
+  证明如下：
+  $
+    |x-2|<epsilon/6=>6|x-2|<6*epsilon/6 =>|6x-12|<epsilon
+  $
+])
+
+#example(title: [
+  $|x+4| < epsilon/2 => |2x+8| < epsilon$
+], solutions: [
+  证明如下：
+  $
+    |x+4|<epsilon/2 =>2|x+4|<2*epsilon/2 => |2x+8|<epsilon
+  $
+])
+
+#line_dc
+
+#pad(x: 0em)[#POINT[在习题53～56中，求$delta$（依赖于$epsilon$），使得所给推论是正确的。]]
+
+#line_dc
+
+#example(title: [
+  $|x-5| < delta => |3x-15|<epsilon$
+], solutions: [
 
 ])
 
 #example(title: [
-  如果$a lt.eq.slant b$，那么下面哪一个是正确的。\
-  (a) $a^2 lt.eq.slant a b$ ~~ (b) $a-3 lt.eq.slant b-3$ ~~ (c) $$
+  $|x-2| < delta => |4x-8| < epsilon$
+], solutions: [
+
+])
+
+#example(title: [
+  $|x+6| <delta => |6x+36| < epsilon$
+], solutions: [
+
+])
+
+#example(title: [
+  $|x+5| < delta => |5x+25| < epsilon$
+], solutions: [
+
+])
+
+#line_dc
+
+#example(
+  title: [
+    在车床上，加工出一个圆周周长为10in的圆盘，这可以通过不断切削，使圆盘变小并随时测量其直径来完成。如果圆周的允许误差范围是0.02in，直径的误差不能超过多少？
+  ],
+  solutions: [
+
+  ],
+)
+
+#example(
+  title: [
+    华氏温度与摄氏温度的关系为$C=5/9(F-32)$。有一个实验溶液需要保证在$50 degree.c$时的误差不超过$3%$。若只有华氏温度器，请问测量误差允许范围是多少？
+  ],
+  solutions: [
+
+  ],
+)
+
+#pad(x: 0em)[#POINT[在习题59～62中，解不等式]]
+
+#line_dc
+
+#example(title: [
+  $|x-1|<2|x-3|$
+], solutions: [
+
+])
+
+#example(title: [
+  $|2x-1| gt.eq.slant |x+1|$
+], solutions: [
+
+])
+
+#example(title: [
+  $2|2x-3| < |x+10|$
+], solutions: [
+
+])
+
+#example(title: [
+  $|3x-1| <2|x+6|$
+], solutions: [
+
+])
+
+#line_dc
+
+#example(title: [
+  用下面给出的步骤证明：$|x|< |y| => x^2< y^2$
+  $
+    |x| < |y| &=> |x| |x| lt.eq.slant |x| |y| "和" |x| |y| < |y| |y| \
+              &=>|x|^2 < |y|^2 \
+              &=>x^2<y^2
+  $
+  相反地
+  $
+    x^2<y^2 &=> |x|^2 < |y|^2 \
+            &=>|x|^2 - |y|^2 <0 \
+            &=> (|x| - |y|)(|x| + |y|)<0 \
+            &=>|x| < |y|
+  $
+], solutions: [
+
+])
+
+#example(title: [
+  利用63题的结果证明$0<a<b=>sqrt(a)<sqrt(b)$。
+], solutions: [
+
+])
+
+#example(
+  title: [
+    利用绝对值的性质，证明下列各式是正确的。\
+    (a) $|a-b| lt.eq.slant |a| +|b| $ ~~ (b) $|a-b| gt.eq.slant |a| - |b|$ ~~ (c) $|a+b+c| lt.eq.slant |a| +|b|+|c|$
+  ],
+  solutions: [
+
+  ],
+)
+
+#example(
+  title: [
+    利用三角不等式和结论$0< |a|< |b| => 1/(|b|) <1/(|a|) $，证明下列不等式：
+    $
+      |1/(x^2+3)-1/(|x|+2)| lt.eq.slant 1/(x^2+3) +1/(|x|+2) lt.eq.slant 1/3 +1/2
+    $
+  ],
+  solutions: [
+
+  ],
+)
+
+#example(title: [
+  证明（参考习题66）：
+  $
+    |(x-2)/(x^2+9)| lt.eq.slant (|x|+2)/9
+  $
+], solutions: [
+
+])
+
+#example(title: [
+  证明：
+  $
+    |x| lt.eq.slant 2 => |(x^2+2x+7)/(x^2+1)| lt.eq.slant 15
+  $
+], solutions: [
+
+])
+
+#example(title: [
+  证明：
+  $
+    |x| lt.eq.slant 1 => |x^4+1/2x^3+1/4x^2+1/8x+1/16| lt.eq.slant 2
+  $
+], solutions: [
+
+])
+
+#example(title: [
+  证明：\
+  (a) 如果$x<0$或者$x>1$，则$x<x^2$ ~~ (b) 当$0<x<1$时，则$x>x^2$
+], solutions: [
+
+])
+
+#example(title: [
+  证明：$a!=0 => a^2+1/a^2 gt.eq.slant 2$。（提示：考虑$(a-1/a)^2$）
+], solutions: [
+
+])
+
+#example(title: [
+  $1/2(a+b)$被称为$a$和$b$的平均值，或者*算术平均值*。证明两个数的平均值在两个数之间。即
+  $
+    a<b <=> a< (a+b)/2 < b
+  $
+], solutions: [
+
+])
+
+#example(title: [
+  $sqrt(a b)$被称为两个正数$a$和$b$的*几何平均值*。证明：
+  $
+    0<a<b => sqrt(a b)<b
+  $
+], solutions: [
+
+])
+
+#example(title: [
+  对于两个正数$a$和$b$，证明：$sqrt(a b) lt.eq.slant 1/2(a+b)$。这是著名的*集合均值与算术均值不等式*。
+], solutions: [
+
+])
+
+#example(
+  title: [
+    在给定周长$p$下，所有矩形中正方形的面积最大。（提示：如果用$a$和$b$表示周长为$p$的矩形的两条相邻边的边长，则矩形的面积为$a b$。而正方形的面积是$a^2=[(a+b)/2]^2$。参考74题的结论）
+  ],
+  solutions: [
+
+  ],
+)
+
+#example(title: [
+  解不等式$1+x+x^2+x^3+...+x^(99) lt.eq.slant 0$
+], solutions: [
+
+])
+
+#example(
+  title: [
+    公式
+    $
+      1/R=1/R_1+1/R_2+1/R_3
+    $
+    给出了由电阻$R_1$、$R_2$和$R_3$并联组成的电路的总电阻$R$。如果$10 lt.eq.slant R_1 lt.eq.slant 20$，$20 lt.eq.slant R_2 lt.eq.slant 30$，$30 lt.eq.slant R_3 lt.eq.slant 40$，求$R$的取值范围。
+  ],
+  solutions: [
+
+  ],
+)
+
+#example(title: [
+  球体的半径约为10in。试确定测量中的半径误差$delta$，以保证计算球体表面积时，表面积误差小于0.01$"in"^2$。
 ], solutions: [
 
 ])
