@@ -1754,25 +1754,42 @@
 #example(title: [
   $|x-5| < delta => |3x-15|<epsilon$
 ], solutions: [
-
+  $
+    |3x-15|<epsilon &=>3|x-5|<epsilon \
+                    &=> |x-5|<epsilon/3 \
+                    &=> delta=epsilon/3
+  $
 ])
 
 #example(title: [
   $|x-2| < delta => |4x-8| < epsilon$
 ], solutions: [
-
+  $
+    |4x-8| < epsilon &=> |4| |x-2| <epsilon \
+                     &=>4|x-2|<epsilon \
+                     &=> |x-2|<epsilon/4 \
+                     &=> delta = epsilon/4
+  $
 ])
 
 #example(title: [
   $|x+6| <delta => |6x+36| < epsilon$
 ], solutions: [
-
+  $
+    |6x+36|<epsilon &=> |6| |x+6| <epsilon \
+                    &=>|x+6|<epsilon/6 \
+                    &=> delta = epsilon/6
+  $
 ])
 
 #example(title: [
   $|x+5| < delta => |5x+25| < epsilon$
 ], solutions: [
-
+  $
+    |5x+25|<epsilon &=>|5| |x+5|<epsilon \
+                    &=> |x+5|<epsilon/5 \
+                    &=> delta=epsilon/5
+  $
 ])
 
 #line_dc
@@ -1782,7 +1799,15 @@
     在车床上，加工出一个圆周周长为10in的圆盘，这可以通过不断切削，使圆盘变小并随时测量其直径来完成。如果圆周的允许误差范围是0.02in，直径的误差不能超过多少？
   ],
   solutions: [
+    $
+      C=pi d \
+      "由题目可得：" |C-10|lt.eq.slant 0.02 \
+      |pi d -10| lt.eq.slant 0.02 \
+      |pi (d-10/pi)| lt.eq.slant 0.02 \
+      |d-10/pi| lt.eq.slant 0.02/pi approx 0.0064 \
+    $
 
+    综上所述：直径的误差不超过0.0064。
   ],
 )
 
@@ -1791,7 +1816,14 @@
     华氏温度与摄氏温度的关系为$C=5/9(F-32)$。有一个实验溶液需要保证在$50 degree.c$时的误差不超过$3%$。若只有华氏温度器，请问测量误差允许范围是多少？
   ],
   solutions: [
+    设摄氏温度为C，华氏温度为F。由题意得：$|C-50| lt.eq.slant 3percent$
+    $
+      |5/9(F-32)-50| &lt.eq.slant 3 percent \
+      5/9|F-32-90|   &lt.eq.slant 1.5 \
+      |F-122|        &lt.eq.slant 2.7 \
+    $
 
+    综上所述：误差不超过2.7。
   ],
 )
 
@@ -1802,51 +1834,98 @@
 #example(title: [
   $|x-1|<2|x-3|$
 ], solutions: [
-
+  $
+    |x-1|       &< |2x-6| \
+    (x-1)^2     &< (2x-6)^2 \
+    x^2-2x+1    &< 4x^2-24x+36 \
+    0           &< 3x^2-22x+35 \
+    (3x-7)(x-5) &>0 \
+    x_1=7/3     &,x_2=5 \
+  $
+  解集得：$x in (-oo,7/3)union(5, +oo)$
 ])
 
 #example(title: [
   $|2x-1| gt.eq.slant |x+1|$
 ], solutions: [
-
+  $
+    (2x-1)^2  &gt.eq.slant (x+1)^2 \
+    4x^2-4x+1 &gt.eq.slant x^2+2x+1 \
+    3x^2-6x   &gt.eq.slant 0 \
+    3x(x-2)   &gt.eq.slant 0 \
+    x_1=0     &, x_2=2
+  $
+  解集得：$x in (-oo,0]union[2,+oo)$
 ])
 
 #example(title: [
   $2|2x-3| < |x+10|$
 ], solutions: [
-
+  $
+    |4x-6|        &< |x+10| \
+    (4x-6)^2      &< (x+10)^2 \
+    16x^2-48x+36  &<x^2+20x+100 \
+    15x^2-68x-64  &<0 \
+    (5x+4)(3x-16) &<0 \
+    x_1=-4/5      &,x_2=16/3
+  $
+  解集得：$x in (-4/5,16/3)$
 ])
 
 #example(title: [
   $|3x-1| <2|x+6|$
 ], solutions: [
-
+  $
+    |3x-1|        &< |2x+12| \
+    (3x-1)^2      &< (2x+12)^2 \
+    9x^2-6x+1     &< 4x^2+48x+144 \
+    5x^2-54x-143  &<0 \
+    (5x+11)(x-13) &<0 \
+    x_1=-11/5     &,x_2=13
+  $
+  解集得：$x in (-11/5,13)$
 ])
 
 #line_dc
 
-#example(title: [
-  用下面给出的步骤证明：$|x|< |y| => x^2< y^2$
-  $
-    |x| < |y| &=> |x| |x| lt.eq.slant |x| |y| "和" |x| |y| < |y| |y| \
-              &=>|x|^2 < |y|^2 \
-              &=>x^2<y^2
-  $
-  相反地
-  $
-    x^2<y^2 &=> |x|^2 < |y|^2 \
-            &=>|x|^2 - |y|^2 <0 \
-            &=> (|x| - |y|)(|x| + |y|)<0 \
-            &=>|x| < |y|
-  $
-], solutions: [
-
-])
+#example(
+  title: [
+    用下面给出的步骤证明：$|x|< |y| => x^2< y^2$
+    $
+      |x| < |y| &=> |x| |x| lt.eq.slant |x| |y| "和" |x| |y| < |y| |y| \
+                &=>|x|^2 < |y|^2 \
+                &=>x^2<y^2
+    $
+    相反地
+    $
+      x^2<y^2 &=> |x|^2 < |y|^2 \
+              &=>|x|^2 - |y|^2 <0 \
+              &=> (|x| - |y|)(|x| + |y|)<0 \
+              &=>|x| < |y|
+    $
+  ],
+  solutions: [
+    $
+      |x| < |y| &=> |x| |x| lt.eq.slant |x| |y| "和" |x| |y| < |y| |y| med med med med &&|x|"和"|y|"均为正数。" \
+                &=>|x|^2 < |y|^2                                                        &&"根据是上一部可得" \
+                &=>x^2<y^2                                                              && |x|^2=x^2 \
+      x^2<y^2   &=> |x|^2 < |y|^2                                                       &&|x|^2=x^2\
+                &=>|x|^2 - |y|^2 <0                                                     &&"左移"\
+                &=> (|x| - |y|)(|x| + |y|)<0                                            &&"因式分解"\
+                &=>|x| < |y|                                                            &&|x|+|y|gt.eq.slant 0
+    $
+  ],
+)
 
 #example(title: [
   利用63题的结果证明$0<a<b=>sqrt(a)<sqrt(b)$。
 ], solutions: [
-
+  $
+  because 0<a<b therefore a=(sqrt(a))^2,b=(sqrt(b))^2 \
+  0<a<b 
+  &=> (sqrt(a))^2<(sqrt(b))^2 \
+  &=>sqrt(a)<sqrt(b)
+  $
 ])
 
 #example(
@@ -1855,7 +1934,8 @@
     (a) $|a-b| lt.eq.slant |a| +|b| $ ~~ (b) $|a-b| gt.eq.slant |a| - |b|$ ~~ (c) $|a+b+c| lt.eq.slant |a| +|b|+|c|$
   ],
   solutions: [
-
+      $
+      $
   ],
 )
 
